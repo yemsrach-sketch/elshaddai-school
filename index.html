@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elshadai Holy Saviour Secondary School | Official Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="School Logo" class="school-logo">
+            <div class="logo-text">ELSHADDAI <br><span>HOLY SAVIOUR</span></div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Campus</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#register" class="nav-btn"><i class="fas fa-graduation-cap"></i> Enroll Now</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="subtitle">PREMIUM SECONDARY EDUCATION</span>
+            <h1>Nurturing Minds, Building Character</h1>
+            <p>Join a community where faith meets future leadership.</p>
+            <a href="#register" class="btn-primary">Start Registration</a>
+        </div>
+    </header>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Our School Life</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="football.jpg" alt="Students playing football">
+                    <div class="caption">Excellence in Sports</div>
+                </div>
+                <div class="image-card">
+                    <img src="parent-meeting.jpg" alt="Parent meeting">
+                    <div class="caption">Active Parent Community</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fees" class="fee-section">
+        <div class="container">
+            <h2 style="color: white;">Investment in Excellence</h2>
+            <div class="fee-card">
+                <div class="premium-badge">PREMIUM ALL-IN-ONE</div>
+                <div class="price">3,425 <span>ETB / Month</span></div>
+                <ul class="fee-features">
+                    <li>? Full Academic Tuition</li>
+                    <li>? ICT & Science Lab Access</li>
+                    <li>? Library & Digital Resources</li>
+                    <li>? Sports & Football Coaching</li>
+                    <li>? Internal Assessment Fees</li>
+                </ul>
+                <p class="fee-note">Transparent monthly billing. No hidden costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="section form-section">
+        <div class="container">
+            <h2><i class="fas fa-graduation-cap"></i> 2026 Student Registration</h2>
+            <p>Submit this form to send an application directly to the Director's Office.</p>
+            
+            <form action="https://formspree.io/f/mqednbvy" method="POST" class="reg-form">
+                <div class="form-group">
+                    <label>Student Full Name</label>
+                    <input type="text" name="Student_Name" placeholder="Full Name" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Target Grade</label>
+                        <select name="Target_Grade">
+                            <option>Grade 9</option>
+                            <option>Grade 10</option>
+                            <option>Grade 11</option>
+                            <option>Grade 12</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Parent Phone</label>
+                        <input type="tel" name="Phone_Number" placeholder="+251..." required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Parent Email Address</label>
+                    <input type="email" name="_replyto" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message to Director</label>
+                    <textarea name="Message" placeholder="Any additional information..."></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="New Website Registration - Elshaddai Holy Saviour">
+
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Submit Application
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="download-box">
+            <h2>School Prospectus</h2>
+            <p>Download our complete 8-page guide to rules and curriculum.</p>
+            <a href="prospectus.pdf" class="btn-download" download>Download PDF</a>
+        </div>
+    </section>
+
+    <footer>
+        <img src="logo.png" alt="Logo" class="footer-logo">
+        <p><strong>Elshaddai Holy Saviour Secondary School</strong></p>
+        <p>Addis Ababa, Ethiopia | yemsrachd1990@gmail.com</p>
+    </footer>
+
+</body>
+</html>

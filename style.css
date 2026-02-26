@@ -1,0 +1,56 @@
+ :root {
+    --primary: #0f172a;
+    --gold: #c5a059;
+    --white: #ffffff;
+    --bg-light: #f1f5f9;
+}
+
+body { margin: 0; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+
+/* Navigation */
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.5rem 10%; background: var(--white);
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+.nav-btn { background: var(--gold); color: white !important; padding: 10px 20px; border-radius: 5px; }
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80');
+    background-size: cover; display: flex; align-items: center; justify-content: center;
+    color: white; text-align: center;
+}
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin: 10px 0; }
+.subtitle { color: var(--gold); letter-spacing: 3px; font-weight: 600; }
+
+/* Fee Section */
+.fee-section { background: var(--primary); padding: 100px 0; }
+.fee-card {
+    background: white; border-radius: 20px; padding: 50px;
+    max-width: 500px; margin: 0 auto; text-align: center; position: relative;
+}
+.premium-badge { 
+    background: var(--gold); color: white; padding: 5px 15px; 
+    border-radius: 20px; display: inline-block; font-size: 0.8rem;
+}
+.price { font-size: 3.5rem; font-weight: 700; color: var(--primary); margin: 20px 0; }
+
+/* Form Design */
+.form-section { background: var(--bg-light); padding: 100px 10%; }
+.reg-form {
+    max-width: 600px; margin: 40px auto; background: white;
+    padding: 40px; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.form-group { margin-bottom: 20px; display: flex; flex-direction: column; text-align: left; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+input, select { padding: 12px; border: 1px solid #ddd; border-radius: 5px; margin-top: 8px; }
+.btn-submit {
+    width: 100%; padding: 15px; background: var(--primary);
+    color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;
+}
+.btn-submit:hover { background: var(--gold); }
+
+footer { background: #000; color: white; padding: 50px; text-align: center; }
